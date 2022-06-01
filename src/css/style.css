@@ -1,0 +1,403 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 54px;
+    background: linear-gradient(300.71deg, rgba(0, 166, 255, 0.5) 15.19%, rgba(2, 255, 200, 0.5) 70.83%);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    /*height: 100vh;*/
+    justify-content: center;
+    background: linear-gradient(228.71deg, rgba(121, 176, 206, 0.5) 15.19%, rgba(240, 249, 255, 0) 70.83%);
+    background-repeat: no-repeat;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.imgLogo {
+    justify-content: center;
+    max-width: 150px;
+    margin: auto;
+    display: block;
+    /*padding-right: 35px;*/
+}
+
+li {
+    list-style-type: none;
+    padding-left: left;
+}
+
+.menu {
+    /* padding-left: 20px;
+    padding-right: 20px;
+    min-height: 360px;*/
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* LINKS */
+.menu li a {
+
+
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(17, 89, 82);
+    display: block;
+    text-decoration: none;
+    padding: 1px 15px 5px 0px;
+    margin-left: 0px;
+    border-radius: 10px;
+    border-start-start-radius: 35px;
+    border-end-end-radius: 100px;
+
+}
+
+/* LINKS efeito */
+.menu li a:hover {
+
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 15px 5px 0px;
+    color: rgb(17, 89, 82);
+    display: block;
+    text-decoration: none;
+    background-color: rgb(186, 252, 250);
+
+}
+
+/* títulos, Home, Menu, e Sobre Nós */
+.menu li ul {
+
+    font-size: 14px;
+    color: rgb(40, 67, 64);
+    font-weight: bold;
+    margin-left: 1px; 
+
+}
+
+.separador {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 6px;
+    border-radius: 35px;
+}
+
+.flexmenu {
+    gap: 25px;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    /* max-height: 720px; */
+    justify-content: left;
+    margin: 0 auto;
+    color: rgb(40, 67, 64);
+    align-items: top;
+
+}
+
+.flexmenu>div {
+    flex: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttonCadastro {
+    box-shadow: inset 0px -3px 7px 0px #29bbff;
+    background: linear-gradient(to bottom, #00ccff 5%, #20b2f1 100%);
+    background-color: #84c5eb;
+    border-radius: 3px;
+    border: 1px solid #0ae5f5;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: x-small;
+    padding: 6px 16px;
+    text-decoration: none;
+}
+
+.buttonCadastro:hover {
+    background: linear-gradient(to bottom, #29ebeb 5%, #84c5eb 100%);
+    background-color: #7dd5f6;
+}
+
+.buttonCadastro:active {
+    position: relative;
+    top: 1px;
+}
+
+.buttonLogar {
+    box-shadow: inset 0px -3px 7px 0px #67ddf7;
+    background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #00ccff;
+    display: inline-block;
+    cursor: pointer;
+    color: #00aeff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: x-small;
+    padding: 6px 25px;
+    text-decoration: none;
+}
+
+.buttonLogar:hover {
+    background: linear-gradient(to bottom, #eefcff 5%, #def8ff 100%);
+    background-color: #ffffff;
+}
+
+.buttonLogar:active {
+    position: relative;
+    top: 1px;
+}
+
+/*Container responsivo para iframe do youtube e afins */
+.embed-container {
+
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 480px;
+    margin-top: 0px;
+    margin-bottom: none;
+    display: flex;
+
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.configImgBanner {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 480px;
+    margin-top: 0px;
+    margin-bottom: none;
+    display: flex;
+}
+
+.imgbanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 240px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 2% ;
+
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.flexBannerMkt {
+    gap: 15px;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 720px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(300.71deg, rgba(0, 166, 255, 0.5) 6.99%, rgba(127, 255, 0) 15.19%, rgb(227, 245, 255) 70.83%, rgba(2, 255, 200, 0.5));
+    color: rgb(40, 67, 64);
+}
+
+.flexBannerMkt>div {
+    padding: 0px;
+    height: 250px;
+    display: flex;
+    flex: 1 1 300px;
+    flex-wrap: wrap;
+
+}
+
+.flexBannerMktblog {
+    gap: 15px;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 720px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(300.71deg, rgba(0, 255, 140, 0.5) 6.99%, rgb(9, 202, 157) 15.19%, rgb(0, 204, 255) 70.83%, rgba(226, 245, 241, 0.5));
+    color: rgb(255, 255, 255);
+}
+
+.flexBannerMktblog>div {
+    padding: 0px;
+    height: 250px;
+    display: flex;
+    flex: 1 1 300px;
+    flex-wrap: wrap;
+
+}
+
+.flexCorpo {
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(40, 67, 64);
+}
+
+.txtMain {
+    align-items: center;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*A Flextxt corresponde a estrutura responsiva para o conteúdo de textos */
+
+.flextxt {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 20px;
+    justify-content: justify;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin: 0 auto;
+    color: rgb(40, 67, 64);
+}
+
+.flextxt>div {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 1 300px;
+
+}
+
+.txt1 {
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.txt2 {
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    text-align:left;
+}
+
+.txt3 {
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align:left;
+}
+
+.italico {
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+}
+
+label input[type="checkbox"] {
+    display: none;
+}
+
+label h4 {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.collapse {
+    height: 0px;
+    overflow: hidden;
+    transition: height 1.0s;
+}
+
+input:checked + .collapse {
+    height: 100%;
+}
+
+
+/* Configurações footer */
+
+.footerFlex {
+    gap: 25px;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    /* max-height: 720px; */
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.footerFlex>div {
+    flex: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerTxt {
+    font-size: larger;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.footerTxt>a {
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    background: linear-gradient(300.71deg, rgba(2, 255, 200) 15.19%, rgba(0, 166, 255) 70.83%);
+    padding: 44px;
+    border-top: .05rem solid #e5e5e5;
+}
+
+/* Carrocel CSS BLOG "Bootstrap nice carousel" */
+
+

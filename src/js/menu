@@ -3,7 +3,7 @@ function writeMenu() {
     "<ul class='menu'>"+
     "<div class='flexmenu'>"+
     "<p>"+
-    "<a href='/view/index.html'><img src='/img/logo-cura-vicio.png' class='imgLogo'></a>"+
+    "<a href='/view/index.html'><img src='/img/logo-cura-vicio.png' title='Home' class='imgLogo'></a>"+
     "</p>"+
     "<ul>"+
     "<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>"+
@@ -57,7 +57,7 @@ function writeFooter(){
     var footer = "<footer class='footer'>"+
     "<div class='footerFlex'>"+
     "<p>"+
-    "<img src='/img/logo-cura-vicio-white.png' class='imgLogo'>"+
+    "<img src='/img/logo-cura-vicio-white.png' title='Quem tem informação domina a situação - Sidarta Rebello' class='imgLogo'>"+
     "</p>"+
     "<br>"+
     "<p class='footerTxt'>|&nbsp; &nbsp; © CuraVício, Inc. 2022.</p>"+

@@ -115,7 +115,32 @@ li {
     justify-content: center;
 }
 
-.buttonCadastro {
+.inputText{
+    color: rgb(40, 67, 64);
+    background: rgb(255, 255, 255);
+    border: 2px solid #00ccff;
+    padding: 10px;
+    z-index: 5;
+    height: 30px;
+    width: flex;
+    font-family: 'Verdana';
+    font-size: 18px;
+
+}
+
+.editText{
+    color: rgb(40, 67, 64);
+    background: rgb(255, 255, 255);
+    border: 2px solid #00ccff;
+    padding: 10px;
+    z-index: 5;
+    height: 185px;
+    width: flex;
+    font-family: 'Verdana';
+    font-size: 18px;
+}
+
+.button {
     box-shadow: inset 0px -3px 7px 0px #29bbff;
     background: linear-gradient(to bottom, #00ccff 5%, #20b2f1 100%);
     background-color: #84c5eb;
@@ -131,12 +156,12 @@ li {
     text-decoration: none;
 }
 
-.buttonCadastro:hover {
+.button:hover {
     background: linear-gradient(to bottom, #29ebeb 5%, #84c5eb 100%);
     background-color: #7dd5f6;
 }
 
-.buttonCadastro:active {
+.button:active {
     position: relative;
     top: 1px;
 }
@@ -166,6 +191,7 @@ li {
     position: relative;
     top: 1px;
 }
+
 
 /*Container responsivo para iframe do youtube e afins */
 .embed-container {
@@ -279,15 +305,34 @@ li {
 
 /*A Flextxt corresponde a estrutura responsiva para o conteúdo de textos */
 
+.flextxtLinks {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 20px;
+    justify-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: 0 auto;
+    color: rgb(40, 67, 64);
+}
+
+.flextxtLinks>div {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 1 300px;
+
+}
+
 .flextxt {
 
     padding-top: 15px;
     padding-bottom: 15px;
     gap: 20px;
-    justify-content: justify;
     display: flex;
     flex-wrap: wrap;
-    max-width: 50%;
+    max-width: 70%;
     margin: 0 auto;
     color: rgb(40, 67, 64);
 }
@@ -307,6 +352,9 @@ a{
     font-weight: bold;
     color: #2fbbf7;
     text-decoration: none;
+    text-align: left;
+    justify-content:left;
+    
 }
 
 .txt4{
@@ -314,8 +362,9 @@ a{
     font-size: 18px;
     font-style:normal;
     font-weight: bold;
-    color: #2fbbf7;
+    color:  #00ccff;
     text-decoration: none;
+    justify-content:left;
 }
 
 .txt1 {
@@ -331,7 +380,9 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
     text-align:left;
+    justify-content:left;
 }
+
 
 .txt3 {
     font-weight: lighter;
@@ -339,6 +390,28 @@ a{
     font-size: 18px;
     text-align:left;
 }
+
+.txtModal{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content:left;
+}
+
+.txtBlocoModal {
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    color:  #00ccff;
+    text-decoration: none;
+    text-align:center;
+    line-height: 1.6;
+}
+
 
 .txtBlocoJustify {
     font-weight: normal;
@@ -349,7 +422,6 @@ a{
     padding-top: 10px;
     line-height: 1.6;
     color: rgb(81, 94, 84);
-}
 }
 
 .italico {
@@ -362,6 +434,7 @@ a{
 
 label input[type="checkbox"] {
     display: none;
+    
 }
 
 label h4 {
@@ -372,13 +445,72 @@ label h4 {
 .collapse {
     height: 0px;
     overflow: hidden;
-    transition: height 1.0s;
+    transition: height 2.5s;
 }
+
 
 input:checked + .collapse {
     height: 100%;
+    width: 100%;
 }
 
+.collapseLinks {
+    height: 0px;
+    overflow:scroll;
+    transition: height 2.0s;
+}
+
+input:checked + .collapseLinks {
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* Configurações Modal */
+
+.modal {
+    background: linear-gradient(300.71deg, rgba(2, 255, 200, .5 ) 15.19% , rgba(0, 166, 255, 0.5) 70.83% );
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    display: none;
+    
+}
+
+.modal-content {
+    margin: 0 auto;
+    margin-top: 15%;
+    max-width: 350px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid rgba(2, 255, 200);
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.modal-body {
+    justify-content: center;
+}
+
+.modal-header {
+    background: linear-gradient(300.71deg, rgba(2, 255, 200) 15.19%, rgba(0, 166, 255) 70.83%);
+    justify-content: center;
+}
+
+.modal-footer {
+    background: linear-gradient(300.71deg, rgba(2, 255, 200) 15.19%, rgba(0, 166, 255) 70.83%);
+    justify-content: center;
+}
 
 /* Configurações footer */
 
@@ -428,6 +560,5 @@ input:checked + .collapse {
     border-top: .05rem solid #e5e5e5;
 }
 
-/* Carrocel CSS BLOG "Bootstrap nice carousel" */
 
 
